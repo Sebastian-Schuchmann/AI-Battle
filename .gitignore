@@ -12,6 +12,7 @@
 
 /Assets/LLMs/API-Keys/*.asset
 /Assets/LLMs/API-Keys/*.asset.meta
+/Assets/LLMs/API-Keys/*.asset.*
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8871c7b95694e3fae46c7f9f935597e, type: 3}
   m_Name: 1.0
   m_EditorClassIdentifier: 
+  regex: {fileID: 11400000, guid: 65695176825b841cd859942561a5d519, type: 2}
   prompt: "You are an AI designed to play TicTacToe. In each interaction, you will
     receive the current board state and your assigned player symbol (X or O). Your
     task is to make the best move possible. Board Representation:\n\nThe board state

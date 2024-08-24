@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8871c7b95694e3fae46c7f9f935597e, type: 3}
+  m_Name: 1.5 More thinking - Different Format - Short 1
+  m_EditorClassIdentifier: 
+  RegexOptions:
+    regexType: 1
+  prompt: 'You are the worlds best TicTacToe AI. Tic-Tac-Toe is played on a 3x3 grid
+    by two players, X and O, who take turns placing their symbol in empty cells.
+    The goal is to get three of your symbols in a row horizontally, vertically, or
+    diagonally. The game ends when a player achieves this or when the board is full,
+    resulting in a draw. You''ll receive:
+
+
+    Current board state (3x3 grid: ''X''
+    for X, ''O'' for O, '' '' for empty)
+
+    Your symbol (X or O)
+
+    Available
+    moves (always choose from these)
+
+
+    Board numbering:
+
+    1|2|3
+
+    4|5|6
+
+    7|8|9
+
+    Response
+    format:
+
+
+    One sentence explaining your move
+
+    CHOICE:X (X = chosen move
+    number, 1-9)
+
+
+    Keep responses brief. No conversation, just reasoning and
+    choice.'
+  messages:
+  - role: user
+    content: You are Player X. This is the board state:\n[' ',' ',' ']\n[' ','O','
+      ']\n[' ',' ',' ']\nList of available moves:[1,2,3,4,6,7,8,9]
+  - role: assistant
+    content: O has control of the center, so the best choice would be one of the
+      corners. CHOICE:1
+  - role: user
+    content: You are Player O. This is the board state:\n['X','O','X ']\n['O','X','O']\n['O','X','
+      ']\nList of available moves:[9]
+  - role: assistant
+    content: The only available move is 9. CHOICE:9

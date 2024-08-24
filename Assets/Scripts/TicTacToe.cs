@@ -13,29 +13,36 @@ public class TicTacToe : MonoBehaviour
     public bool autoplay = false;
     public bool autoRestart = false;
     public bool sendAvailableMoves = false;
+    public float timeBetweenRounds = 3f;
+    public bool illegalOrInvalidMovesCountAsMoves = false;
 
     [Header("Language Models")]
     public LanguageModel languageModelX;
     public LanguageModel languageModelO;
     
     [Header("References")]
-    public Button nextBtn;
     public TMP_Text boardStateText;
     public TTT_LLMGameLogger loggerPlayerX;
     public TTT_LLMGameLogger loggerPlayerO;
     public TTT_Field[] fields;
+    public GameObject turnIndicatorX, turnIndicatorO;
 
     private bool isXTurn = true;
     private bool nextTurnReady = false;
     private bool gameEnded = false;
     private bool autoTriggerNext = false;
-
+/*
+ *
+ *You are Player O. This is the board state:\n['X','O','X ']\n['O','X','O']\n['O','X',' ']\nList of available moves:[9]
+ */
     public void Start()
     {
         ResetField();
         
         loggerPlayerO.modelname = languageModelO.name;
         loggerPlayerX.modelname = languageModelX.name;
+
+        if (autoplay) StartCoroutine(Next());
     }
 
     private void Update()
@@ -43,31 +50,37 @@ public class TicTacToe : MonoBehaviour
         if(autoTriggerNext)
         {
             autoTriggerNext = false;
-            Next();
+            StartCoroutine(Next());
         }
         
-        nextBtn.interactable = nextTurnReady || gameEnded;
         boardStateText.text = GetBoardAsString();
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Next();
+            StartCoroutine(Next());
         }
 
         if (Input.GetKeyDown(KeyCode.R))
         {
             ResetField();
         }
+        
+        turnIndicatorX.SetActive(isXTurn);
+        turnIndicatorO.SetActive(!isXTurn);
     }
 
-    public void Next()
+    public IEnumerator Next()
     {
         if (gameEnded)
         {
+            gameEnded = false;
+            yield return new WaitForSeconds(timeBetweenRounds);
             ResetField();
         }
 
-        if (!nextTurnReady) return;
+        if (!nextTurnReady) yield break;
+        nextTurnReady = false;
+        
         var llm = isXTurn ? languageModelX : languageModelO;
 
         string board = GetBoardAsString();
@@ -80,7 +93,6 @@ public class TicTacToe : MonoBehaviour
         
         Debug.Log($"Prompt: {prompt}");
 
-        nextTurnReady = false;
         llm.Generate(prompt, LlmCallback);
     }
 
@@ -89,16 +101,37 @@ public class TicTacToe : MonoBehaviour
         var logger = isXTurn ? loggerPlayerX : loggerPlayerO;
         logger.events.Add(new TTT_Event {LogType = type});
     }
+    
+    private void LogResponse(string response)
+    {
+        var logger = isXTurn ? loggerPlayerX : loggerPlayerO;
+        logger.AddResponse(response);
+    }
 
     private void LlmCallback(string response)
     {
+        if (response == null)
+        {
+            Debug.LogError("Error in response");
+            nextTurnReady = true;
+            
+            if (autoplay)
+            {
+                autoTriggerNext = true;
+            }
+            
+            return;
+        }
+       
         HideAllErrorsOnField();
+        LogResponse(response);
+        
         Debug.Log($"Response: {response}");
 
         int move = ParseMove(response);
         if (move != -1)
         {
-            var selectedIndex = move - 1;
+            var selectedIndex = move;
             if (IsValidMove(selectedIndex))
             {
                 SetField(selectedIndex, isXTurn ? TTT_Field.State.X : TTT_Field.State.O);
@@ -136,9 +169,13 @@ public class TicTacToe : MonoBehaviour
                 isXTurn = !isXTurn;
                 nextTurnReady = true;
             }
-            // If there is any error, the next turn is ready but we dont switch player
             else
             {
+                if (illegalOrInvalidMovesCountAsMoves)
+                {
+                    isXTurn = !isXTurn;
+                    Debug.LogWarning($"Switching player turn due to illegal move: {move}");
+                }
                 fields[selectedIndex].ShowError();
                 LogEvent(EventLogType.IllegalMove);
                 Debug.LogWarning($"AI attempted illegal move: {move}");
@@ -147,8 +184,14 @@ public class TicTacToe : MonoBehaviour
         }
         else
         {   
+            if (illegalOrInvalidMovesCountAsMoves)
+            {
+                isXTurn = !isXTurn;
+                Debug.LogWarning($"Switching player turn due to illegal move: {move}");
+            }
+            
             LogEvent(EventLogType.InvalidMove);
-            Debug.LogError("No valid move found in AI response");
+            Debug.LogWarning("No valid move found in AI response");
             nextTurnReady = true;
         }
 
@@ -249,31 +292,73 @@ public class TicTacToe : MonoBehaviour
         {
             if (fields[i].state == TTT_Field.State.Empty)
             {
-                availableMoves.Add(i + 1); // Adding 1 to convert to 1-based index
+                availableMoves.Add(i);
             }
         }
 
         return string.Join(",", availableMoves);
     }
+    
+    public int[] GetAvailableMovesAsArray()
+    {
+        List<int> availableMoves = new List<int>();
+
+        for (int i = 0; i < fields.Length; i++)
+        {
+            if (fields[i].state == TTT_Field.State.Empty)
+            {
+                availableMoves.Add(i);
+            }
+        }
+
+        return availableMoves.ToArray();
+    }
 
     private int ParseMove(string response)
     {
-        Match match = Regex.Match(response, @"\b[1-9]\b");
-
-        if (match.Success)
-        {
-            return int.Parse(match.Value);
-        }
-
-        return -1; // No valid move found
+        //Each system prompt has its own regex options because the requested response format can be different
+        var regex = isXTurn ? languageModelX.systemPrompt.RegexOptions : languageModelO.systemPrompt.RegexOptions;
+        return regex.ParseMove(response);
     }
-
+    
     private bool IsValidMove(int index)
     {
         return index is >= 0 and < 9 && fields[index].state == TTT_Field.State.Empty;
     }
 
+    /* TODO: Implement this function
+     * [' ','X','O']
+     * ['O','X','X']
+     * ['O',' ','O']
+     */
     private string GetBoardAsString()
+    {
+        string[] rows = new string[3];
+        for (int i = 0; i < 3; i++)
+        {
+            char[] row = new char[3];
+            for (int j = 0; j < 3; j++)
+            {
+                int index = i * 3 + j;
+                switch (fields[index].state)
+                {
+                    case TTT_Field.State.Empty:
+                        row[j] = ' ';
+                        break;
+                    case TTT_Field.State.X:
+                        row[j] = 'X';
+                        break;
+                    case TTT_Field.State.O:
+                        row[j] = 'O';
+                        break;
+                }
+            }
+            rows[i] = $"['{row[0]}','{row[1]}','{row[2]}']";
+        }
+        return string.Join("\n", rows);
+    }
+
+    private string GetBoardAsString_old()
     {
         string board = "";
         foreach (var field in fields)
@@ -281,7 +366,7 @@ public class TicTacToe : MonoBehaviour
             switch (field.state)
             {
                 case TTT_Field.State.Empty:
-                    board += "?";
+                    board += ".";
                     break;
                 case TTT_Field.State.X:
                     board += "X";

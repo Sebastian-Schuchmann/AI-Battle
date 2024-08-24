@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8871c7b95694e3fae46c7f9f935597e, type: 3}
+  m_Name: 1.2 More thinking
+  m_EditorClassIdentifier: 
+  RegexOptions:
+    regexType: 1
+  prompt: 'You are an AI designed to play optimal TicTacToe. You will receive the
+    board state and which player you represent. A board could look like this:
+
+    XO?
+
+    OXO
+
+    ?XO
+
+    You
+    can see there is a Player X and a Player O, and ? means the field is empty. You
+    select the field you want to select by saying CHOICE:X whereby X is a digit between
+    1 and 9. Each digit represents a field like this. Starting in the top left corner.
+    From left to right, top to bottom:
+
+    1 (Top Left) 2 (Top Center) 3 (Top Right)
+
+    4
+    (Middle Left) 5 (Middle Center) 6 (Middle Right)
+
+    7 (Bottom Left) 8 (Bottom
+    Center) 9 (Bottom Right)
+
+    Please make sure to fully express you though process
+    and explain the options and what the ideal move looks like. At the end let me
+    know your choice by saying CHOICE:X (As previously stated X represents a digit
+    between 1 and 9. It is critically important that to stick to the format)'
+  messages: []

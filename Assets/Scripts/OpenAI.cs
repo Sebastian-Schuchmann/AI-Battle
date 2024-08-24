@@ -5,6 +5,34 @@ using LLMs.Src;
 using UnityEngine;
 using UnityEngine.Networking;
 
+[Serializable]
+public class Message
+{
+    public string role;
+    [TextArea(2, 10)] public string content;
+}
+
+[Serializable]
+public class ResponseBody
+{
+    public Choice[] choices;
+}
+
+[Serializable]
+public class Choice
+{
+    public Message message;
+}
+
+[Serializable]
+public class RequestBody
+{
+    public string model = "gpt-3.5-turbo";
+    public Message[] messages;
+}
+
+
+[CreateAssetMenu(fileName = "OpenAI", menuName = "LLMs/OpenAI", order = 0)]
 public class OpenAI : LanguageModel
 {
     public ApiKey apiKey;
@@ -49,7 +77,12 @@ public class OpenAI : LanguageModel
             if (request.result != UnityWebRequest.Result.Success)
             {
                 Debug.LogError("Error: " + request.error);
-                callback?.Invoke("Error: " + request.error);
+                //if code 429, wait for a few seconds
+                if (request.responseCode == 429)
+                {
+                    yield return new WaitForSeconds(10);
+                }
+                callback?.Invoke(null);
             }
             else
             {
@@ -60,31 +93,7 @@ public class OpenAI : LanguageModel
         }
     }
 
-    [Serializable]
-    public class RequestBody
-    {
-        public string model = "gpt-3.5-turbo";
-        public Message[] messages;
-    }
-
-    [Serializable]
-    public class Message
-    {
-        public string role;
-        [TextArea(2, 10)] public string content;
-    }
-
-    [Serializable]
-    public class ResponseBody
-    {
-        public Choice[] choices;
-    }
-
-    [Serializable]
-    public class Choice
-    {
-        public Message message;
-    }
+    
 
 }
 

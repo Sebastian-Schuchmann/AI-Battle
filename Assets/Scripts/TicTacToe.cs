@@ -43,8 +43,6 @@ public class TicTacToe : MonoBehaviour
  */
     public void Start()
     {
-        ResetField();
-
         if (languageModelX is ReplayLLM replayLlm)
         {
             replayLlm.Parse();
@@ -59,7 +57,8 @@ public class TicTacToe : MonoBehaviour
             loggerPlayerO.modelname = languageModelO.name;
             loggerPlayerX.modelname = languageModelX.name;
         }
-
+        
+        ResetField();
         if (autoplay) StartCoroutine(Next());
     }
 
@@ -431,6 +430,10 @@ public class TicTacToe : MonoBehaviour
 
         //50/50
         isXTurn = Random.Range(0f, 1f) > 0.5f;
+        if (replayMode)
+        {
+            isXTurn = (languageModelX as ReplayLLM).GetCurrentIsXTurn();
+        }
         nextTurnReady = true;
         gameEnded = false;
         

@@ -19,6 +19,11 @@ namespace LLMs.Src
             replay = JsonConvert.DeserializeObject<Replay>(replayFile.text);
             currentIndex = 0;
         }
+
+        public bool GetCurrentIsXTurn()
+        {
+            return replay.steps[currentIndex].isXTurn;
+        }
         
 
         public override void Generate(string prompt, Action<string> callback)
@@ -42,6 +47,7 @@ namespace LLMs.Src
             }
             
             var step = replay.steps[currentIndex];
+            Debug.Log($"Replaystep {currentIndex} - {step.modelname}: {step.response}");
             callback?.Invoke(step.response);
             currentIndex++;
         }

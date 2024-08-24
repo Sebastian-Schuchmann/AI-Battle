@@ -965,7 +965,7 @@ MonoBehaviour:
   autoplay: 1
   autoRestart: 1
   sendAvailableMoves: 1
-  timeBetweenRounds: 3
+  timeBetweenRounds: 0.1
   illegalOrInvalidMovesCountAsMoves: 1
   languageModelX: {fileID: 11400000, guid: f5d33bdbe141d4ee193517562135fa26, type: 2}
   languageModelO: {fileID: 11400000, guid: f5d33bdbe141d4ee193517562135fa26, type: 2}

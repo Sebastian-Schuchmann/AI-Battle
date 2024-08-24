@@ -852,6 +852,7 @@ GameObject:
   m_Component:
   - component: {fileID: 817257550}
   - component: {fileID: 817257551}
+  - component: {fileID: 817257552}
   - component: {fileID: 817257549}
   - component: {fileID: 817257548}
   - component: {fileID: 817257547}
@@ -966,8 +967,8 @@ MonoBehaviour:
   sendAvailableMoves: 1
   timeBetweenRounds: 3
   illegalOrInvalidMovesCountAsMoves: 1
-  languageModelX: {fileID: 11400000, guid: cf8aa577126264646ad309938f25fbae, type: 2}
-  languageModelO: {fileID: 11400000, guid: 8fca45c340ec14f57861459a213c4c1e, type: 2}
+  languageModelX: {fileID: 11400000, guid: f5d33bdbe141d4ee193517562135fa26, type: 2}
+  languageModelO: {fileID: 11400000, guid: f5d33bdbe141d4ee193517562135fa26, type: 2}
   boardStateText: {fileID: 692023558}
   loggerPlayerX: {fileID: 1574612973}
   loggerPlayerO: {fileID: 1610201703}
@@ -983,6 +984,20 @@ MonoBehaviour:
   - {fileID: 27315861}
   turnIndicatorX: {fileID: 5163473238887627567}
   turnIndicatorO: {fileID: 1538462124}
+--- !u!114 &817257552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817257546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d362cbbb00d41ad83fd5de72ef1eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TicTacToe: {fileID: 817257551}
+  recordOnStart: 1
 --- !u!1 &1253303058
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,13 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using LLMs.Src;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
+
 public class TicTacToe : MonoBehaviour
 {
+    public event Action<ReplayStep> OnMove;
+    
     [Header("Settings")]
     public bool autoplay = false;
     public bool autoRestart = false;
@@ -31,6 +35,8 @@ public class TicTacToe : MonoBehaviour
     private bool nextTurnReady = false;
     private bool gameEnded = false;
     private bool autoTriggerNext = false;
+
+    private bool replayMode;
 /*
  *
  *You are Player O. This is the board state:\n['X','O','X ']\n['O','X','O']\n['O','X',' ']\nList of available moves:[9]
@@ -38,9 +44,21 @@ public class TicTacToe : MonoBehaviour
     public void Start()
     {
         ResetField();
-        
-        loggerPlayerO.modelname = languageModelO.name;
-        loggerPlayerX.modelname = languageModelX.name;
+
+        if (languageModelX is ReplayLLM replayLlm)
+        {
+            replayLlm.Parse();
+            loggerPlayerO.modelname = replayLlm.replay.modelnameO;
+            loggerPlayerX.modelname = replayLlm.replay.modelnameX;
+            replayMode = true;
+            
+            Debug.Log("Replay Mode");
+        }
+        else
+        {
+            loggerPlayerO.modelname = languageModelO.name;
+            loggerPlayerX.modelname = languageModelX.name;
+        }
 
         if (autoplay) StartCoroutine(Next());
     }
@@ -69,6 +87,8 @@ public class TicTacToe : MonoBehaviour
         turnIndicatorO.SetActive(!isXTurn);
     }
 
+    private ReplayStep currentReplayStep;
+
     public IEnumerator Next()
     {
         if (gameEnded)
@@ -80,11 +100,25 @@ public class TicTacToe : MonoBehaviour
 
         if (!nextTurnReady) yield break;
         nextTurnReady = false;
-        
+
+        if (currentReplayStep != null)
+        {
+            currentReplayStep.boardStateAfter = GetBoardAsString();
+            if(!replayMode ) OnMove?.Invoke(currentReplayStep);
+            currentReplayStep = null;
+        }
+
+        currentReplayStep = new ReplayStep();
+        currentReplayStep.isXTurn = isXTurn;
+            
         var llm = isXTurn ? languageModelX : languageModelO;
+        currentReplayStep.modelname = llm.name;
 
         string board = GetBoardAsString();
+        currentReplayStep.boardStateBefore = board;
+        
         var prompt = $"You are Player {(isXTurn ? "X" : "O")}. This is the board state:\n{board}";
+        currentReplayStep.prompt = prompt;
         
         if (sendAvailableMoves)
         {
@@ -110,6 +144,8 @@ public class TicTacToe : MonoBehaviour
 
     private void LlmCallback(string response)
     {
+        currentReplayStep.response = response;
+        
         if (response == null)
         {
             Debug.LogError("Error in response");
@@ -418,4 +454,5 @@ public class TicTacToe : MonoBehaviour
             field.HideWin();
         }
     }
+
 }

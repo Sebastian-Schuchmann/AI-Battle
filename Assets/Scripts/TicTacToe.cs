@@ -171,28 +171,29 @@ public class TicTacToe : MonoBehaviour
             }
             else
             {
+                fields[selectedIndex].ShowError();
+                LogEvent(EventLogType.IllegalMove);
+                Debug.LogWarning($"AI attempted illegal move: {move}");
+                nextTurnReady = true;
+                
                 if (illegalOrInvalidMovesCountAsMoves)
                 {
                     isXTurn = !isXTurn;
                     Debug.LogWarning($"Switching player turn due to illegal move: {move}");
                 }
-                fields[selectedIndex].ShowError();
-                LogEvent(EventLogType.IllegalMove);
-                Debug.LogWarning($"AI attempted illegal move: {move}");
-                nextTurnReady = true;
             }
         }
         else
         {   
+            LogEvent(EventLogType.InvalidMove);
+            Debug.LogWarning("No valid move found in AI response");
+            nextTurnReady = true;
+            
             if (illegalOrInvalidMovesCountAsMoves)
             {
                 isXTurn = !isXTurn;
                 Debug.LogWarning($"Switching player turn due to illegal move: {move}");
             }
-            
-            LogEvent(EventLogType.InvalidMove);
-            Debug.LogWarning("No valid move found in AI response");
-            nextTurnReady = true;
         }
 
         if (autoplay)
@@ -304,7 +305,7 @@ public class TicTacToe : MonoBehaviour
         List<int> availableMoves = new List<int>();
 
         for (int i = 0; i < fields.Length; i++)
-        {
+        {   
             if (fields[i].state == TTT_Field.State.Empty)
             {
                 availableMoves.Add(i);

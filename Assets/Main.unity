@@ -965,10 +965,10 @@ MonoBehaviour:
   autoplay: 1
   autoRestart: 1
   sendAvailableMoves: 1
-  timeBetweenRounds: 0.1
+  timeBetweenRounds: 1
   illegalOrInvalidMovesCountAsMoves: 1
-  languageModelX: {fileID: 11400000, guid: f5d33bdbe141d4ee193517562135fa26, type: 2}
-  languageModelO: {fileID: 11400000, guid: f5d33bdbe141d4ee193517562135fa26, type: 2}
+  languageModelX: {fileID: 11400000, guid: 68a1851163d8d435fa04d61a0d8879a6, type: 2}
+  languageModelO: {fileID: 11400000, guid: 03290971315104e24afc34788f3aae14, type: 2}
   boardStateText: {fileID: 692023558}
   loggerPlayerX: {fileID: 1574612973}
   loggerPlayerO: {fileID: 1610201703}

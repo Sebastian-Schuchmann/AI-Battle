@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 632de281f6bf4202bf3752476d0fef6f, type: 3}
   m_Name: smollm-135m
   m_EditorClassIdentifier: 
-  systemPrompt: {fileID: 11400000, guid: 192e699c0db4e40a3a5bd7b3a73f0896, type: 2}
+  systemPrompt: {fileID: 11400000, guid: d53470d1da5744cce80567ec3e29b511, type: 2}
   apiKey: {fileID: 11400000, guid: f38ec756a47614d0f833ec7d2f7bd08a, type: 2}
   model: smollm:135m
   API_URL: http://localhost:11434/v1/chat/completions

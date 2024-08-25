@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2363fb32f0524902b663775cb6b1826b, type: 3}
   m_Name: Claude3.5-Sonnet
   m_EditorClassIdentifier: 
-  systemPrompt: {fileID: 11400000, guid: 192e699c0db4e40a3a5bd7b3a73f0896, type: 2}
+  systemPrompt: {fileID: 11400000, guid: 605944a155fa7403e86459b740639431, type: 2}
   apiKey: {fileID: 11400000, guid: fb1a5935031e647b4bc7880b27ca9102, type: 2}
   model: claude-3-5-sonnet-20240620
   API_URL: https://api.anthropic.com/v1/messages
-  maxTokens: 1024
+  maxTokens: 2048

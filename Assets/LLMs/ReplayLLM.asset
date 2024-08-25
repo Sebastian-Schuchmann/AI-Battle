@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ReplayLLM
   m_EditorClassIdentifier: 
   systemPrompt: {fileID: 11400000, guid: 192e699c0db4e40a3a5bd7b3a73f0896, type: 2}
-  replayFile: {fileID: 4900000, guid: cc18f3c7940724639a0b56ddecb1a1d5, type: 3}
+  replayFile: {fileID: 4900000, guid: 69207f898e0fe434f90e3339137feb81, type: 3}
   timeBetweenSteps: 0.01

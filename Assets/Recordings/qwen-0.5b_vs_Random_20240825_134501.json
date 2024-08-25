@@ -1,0 +1,1222 @@
+{
+  "modelnameX": "qwen-0.5b",
+  "modelnameO": "Random",
+  "steps": [
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:5",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "response": "5",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ','O']\n[' ',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ','O']\n[' ',' ','O']",
+      "boardStateAfter": "[' ','X',' ']\n[' ',' ','O']\n[' ',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ','O']\n[' ',' ','O']",
+      "response": "1",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ','X',' ']\n[' ',' ','O']\n[' ',' ','O']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ','X',' ']\n[' ',' ','O']\n[' ',' ','O']",
+      "response": "CHOICE:2",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:3",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['X',' ',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "response": "0\n1\n2\n3\n4\n5\n6\n7\n8\n\n1 \nO \nX \n\nO \nX \n\n4 \n4 \n\n4 \nO \n\n0",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['X',' ',' ']\n['O','O',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X',' ',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:4",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n['O','O',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['X','X',' ']\n['O','O',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X',' ',' ']\n['O','O',' ']\n[' ',' ',' ']",
+      "response": "1",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','X',' ']\n['O','O',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['X','X',' ']\n['O','O',' ']\n[' ','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','X',' ']\n['O','O',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:7",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','X',' ']\n['O','O',' ']\n[' ','O',' ']",
+      "boardStateAfter": "['X','X',' ']\n['O','O',' ']\n[' ','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','X',' ']\n['O','O',' ']\n[' ','O',' ']",
+      "response": "1, 3, 5, 7, 9]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','X',' ']\n['O','O',' ']\n[' ','O',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','X',' ']\n['O','O',' ']\n[' ','O',' ']",
+      "response": "CHOICE:5",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ','X',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "7",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ','X',' ']",
+      "boardStateAfter": "[' ','O',' ']\n[' ',' ',' ']\n[' ','X',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ','X',' ']",
+      "response": "CHOICE:1",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ','O',' ']\n[' ',' ',' ']\n[' ','X',' ']",
+      "boardStateAfter": "[' ','O',' ']\n[' ',' ',' ']\n[' ','X',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ','O',' ']\n[' ',' ',' ']\n[' ','X',' ']",
+      "response": "1 1 O O\n  2 4 X X\n  3 8 Y Y\n  4 12 Z Z",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ','O',' ']\n[' ',' ',' ']\n[' ','X',' ']",
+      "boardStateAfter": "[' ','O',' ']\n[' ',' ','O']\n[' ','X',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ','O',' ']\n[' ',' ',' ']\n[' ','X',' ']",
+      "response": "CHOICE:5",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ','O',' ']\n[' ',' ','O']\n[' ','X',' ']",
+      "boardStateAfter": "['X','O',' ']\n[' ',' ','O']\n[' ','X',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ','O',' ']\n[' ',' ','O']\n[' ','X',' ']",
+      "response": "0,2,3,4,6,8]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','O',' ']\n[' ',' ','O']\n[' ','X',' ']",
+      "boardStateAfter": "['X','O',' ']\n[' ',' ','O']\n[' ','X','O']",
+      "prompt": "You are Player O. This is the board state:\n['X','O',' ']\n[' ',' ','O']\n[' ','X',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','O',' ']\n[' ',' ','O']\n[' ','X','O']",
+      "boardStateAfter": "['X','O',' ']\n[' ','X','O']\n[' ','X','O']",
+      "prompt": "You are Player X. This is the board state:\n['X','O',' ']\n[' ',' ','O']\n[' ','X','O']",
+      "response": "4, 6",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','O',' ']\n[' ','X','O']\n[' ','X','O']",
+      "boardStateAfter": "['X','O',' ']\n['O','X','O']\n[' ','X','O']",
+      "prompt": "You are Player O. This is the board state:\n['X','O',' ']\n[' ','X','O']\n[' ','X','O']",
+      "response": "CHOICE:3",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','O',' ']\n['O','X','O']\n[' ','X','O']",
+      "boardStateAfter": "['X','O','X']\n['O','X','O']\n[' ','X','O']",
+      "prompt": "You are Player X. This is the board state:\n['X','O',' ']\n['O','X','O']\n[' ','X','O']",
+      "response": "2,6",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','O','X']\n['O','X','O']\n[' ','X','O']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','O','X']\n['O','X','O']\n[' ','X','O']",
+      "response": "CHOICE:6",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:3",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "response": "12",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ','O',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:1",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ','O',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ','O',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ','O',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "response": "13",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ','O',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ','O',' ']\n['O',' ',' ']\n[' ','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ','O',' ']\n['O',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:7",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ','O',' ']\n['O',' ',' ']\n[' ','O',' ']",
+      "boardStateAfter": "['X','O',' ']\n['O',' ',' ']\n[' ','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ','O',' ']\n['O',' ',' ']\n[' ','O',' ']",
+      "response": "0, 2, 4, 5, 6, 8] - Game is Over.",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','O',' ']\n['O',' ',' ']\n[' ','O',' ']",
+      "boardStateAfter": "['X','O',' ']\n['O',' ','O']\n[' ','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','O',' ']\n['O',' ',' ']\n[' ','O',' ']",
+      "response": "CHOICE:5",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','O',' ']\n['O',' ','O']\n[' ','O',' ']",
+      "boardStateAfter": "['X','O','X']\n['O',' ','O']\n[' ','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','O',' ']\n['O',' ','O']\n[' ','O',' ']",
+      "response": "2\n4\n6\n8",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','O','X']\n['O',' ','O']\n[' ','O',' ']",
+      "boardStateAfter": "['X','O','X']\n['O',' ','O']\n['O','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','O','X']\n['O',' ','O']\n[' ','O',' ']",
+      "response": "CHOICE:6",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','O','X']\n['O',' ','O']\n['O','O',' ']",
+      "boardStateAfter": "['X','O','X']\n['O','X','O']\n['O','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','O','X']\n['O',' ','O']\n['O','O',' ']",
+      "response": "4,8",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','O','X']\n['O','X','O']\n['O','O',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','O','X']\n['O','X','O']\n['O','O',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ','X',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "1, 2",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ','X',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ','X','O']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ','X',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:2",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ','X','O']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ','X','O']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ','X','O']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "2,4,6,8,0, 1",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ','X','O']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ','X','O']\n[' ',' ',' ']\n[' ',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n[' ','X','O']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ','X','O']\n[' ',' ',' ']\n[' ',' ','O']",
+      "boardStateAfter": "['X','X','O']\n[' ',' ',' ']\n[' ',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n[' ','X','O']\n[' ',' ',' ']\n[' ',' ','O']",
+      "response": "[0] 2   [1] 0   [2] 5    [3] 5   [4] 13  [5] 0   [6] 8   [7] 42  [8] 0  ",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','X','O']\n[' ',' ',' ']\n[' ',' ','O']",
+      "boardStateAfter": "['X','X','O']\n[' ',' ',' ']\n['O',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n['X','X','O']\n[' ',' ',' ']\n[' ',' ','O']",
+      "response": "CHOICE:6",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','X','O']\n[' ',' ',' ']\n['O',' ','O']",
+      "boardStateAfter": "['X','X','O']\n['X',' ',' ']\n['O',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n['X','X','O']\n[' ',' ',' ']\n['O',' ','O']",
+      "response": "[3] [4] [5] [7]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','X','O']\n['X',' ',' ']\n['O',' ','O']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','X','O']\n['X',' ',' ']\n['O',' ','O']",
+      "response": "CHOICE:7",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['X',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "0,1,2,3,4,5,6,7,8]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['X',' ',' ']\n[' ',' ',' ']\n[' ',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n['X',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n[' ',' ',' ']\n[' ',' ','O']",
+      "boardStateAfter": "['X',' ',' ']\n[' ',' ',' ']\n[' ',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n['X',' ',' ']\n[' ',' ',' ']\n[' ',' ','O']",
+      "response": "[0,2,3,4,5], [4,2,0,0]]\n[List of possible moves: [0-4, 0-5, 0-6, 0-8]]]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n[' ',' ',' ']\n[' ',' ','O']",
+      "boardStateAfter": "['X',' ',' ']\n[' ','O',' ']\n[' ',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n['X',' ',' ']\n[' ',' ',' ']\n[' ',' ','O']",
+      "response": "CHOICE:4",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n[' ','O',' ']\n[' ',' ','O']",
+      "boardStateAfter": "['X',' ',' ']\n[' ','O',' ']\n[' ',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n['X',' ',' ']\n[' ','O',' ']\n[' ',' ','O']",
+      "response": "No answer found.",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n[' ','O',' ']\n[' ',' ','O']",
+      "boardStateAfter": "['X','O',' ']\n[' ','O',' ']\n[' ',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n['X',' ',' ']\n[' ','O',' ']\n[' ',' ','O']",
+      "response": "CHOICE:1",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','O',' ']\n[' ','O',' ']\n[' ',' ','O']",
+      "boardStateAfter": "['X','O','X']\n[' ','O',' ']\n[' ',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n['X','O',' ']\n[' ','O',' ']\n[' ',' ','O']",
+      "response": "2\n3\n5\n6\n7",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','O','X']\n[' ','O',' ']\n[' ',' ','O']",
+      "boardStateAfter": "['X','O','X']\n[' ','O',' ']\n['O',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n['X','O','X']\n[' ','O',' ']\n[' ',' ','O']",
+      "response": "CHOICE:6",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','O','X']\n[' ','O',' ']\n['O',' ','O']",
+      "boardStateAfter": "['X','O','X']\n['X','O',' ']\n['O',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n['X','O','X']\n[' ','O',' ']\n['O',' ','O']",
+      "response": "3,5,7 = [0, 1, 2], [4, 6, 8], [8, 2, 6], [3,5,7]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','O','X']\n['X','O',' ']\n['O',' ','O']",
+      "boardStateAfter": "['X','O','X']\n['X','O','O']\n['O',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n['X','O','X']\n['X','O',' ']\n['O',' ','O']",
+      "response": "CHOICE:5",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','O','X']\n['X','O','O']\n['O',' ','O']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','O','X']\n['X','O','O']\n['O',' ','O']",
+      "response": "7",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ','O',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:1",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ','O',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ','O','X']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ','O',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "2,4,6",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ','O','X']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['O','O','X']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ','O','X']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:0",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O','O','X']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['O','O','X']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['O','O','X']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "[0,1,2,3,5,6,7,8], [0], [0],\n[0], [0],\n[0], [0],\n[0]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['O','O','X']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['O','O','X']\n['O',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['O','O','X']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:3",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O','O','X']\n['O',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['O','O','X']\n['O',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['O','O','X']\n['O',' ',' ']\n[' ',' ',' ']",
+      "response": "[1,2,3], [0,1,2], [8]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['O','O','X']\n['O',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['O','O','X']\n['O',' ','O']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['O','O','X']\n['O',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:5",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O','O','X']\n['O',' ','O']\n[' ',' ',' ']",
+      "boardStateAfter": "['O','O','X']\n['O','X','O']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['O','O','X']\n['O',' ','O']\n[' ',' ',' ']",
+      "response": "[4,6,7], [4,6,4]\n[0, 1, 2, 3, O, X], [O, O, X], [O, X O], [X, X O O X]]\n```\n\nThis is the board state for a Tic Tac Toe game. \n\nThe board state starts at the top-left corner with two open spaces in between. The first row represents the beginning of the game (e.g. player number X's turn), while the second row represents the start of another game (e.g. player number O's turn), with an emphasis on the front rows, i.e., \"X\" turns.\n\nThe game ends when a player reaches either the bottom right corner or the top left corner. If the player does not reach the end board, it is considered a draw. \n\nOverall, the Tic Tac Toe game has been around for decades and there have always been variations of this game.",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['O','O','X']\n['O','X','O']\n[' ',' ',' ']",
+      "boardStateAfter": "['O','O','X']\n['O','X','O']\n[' ',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n['O','O','X']\n['O','X','O']\n[' ',' ',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O','O','X']\n['O','X','O']\n[' ',' ','O']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['O','O','X']\n['O','X','O']\n[' ',' ','O']",
+      "response": "[6,7] doesn't work as a move list. It will not allow you to place the \"O\" symbol on the board after putting \"O\" elsewhere in the game.",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:5",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "boardStateAfter": "['X',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "response": "[0]\n[1]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "boardStateAfter": "['X',' ',' ']\n['O',' ','O']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "response": "CHOICE:3",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n['O',' ','O']\n[' ',' ',' ']",
+      "boardStateAfter": "['X',' ',' ']\n['O','X','O']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X',' ',' ']\n['O',' ','O']\n[' ',' ',' ']",
+      "response": "4, 6, 8",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n['O','X','O']\n[' ',' ',' ']",
+      "boardStateAfter": "['X',' ',' ']\n['O','X','O']\n['O',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X',' ',' ']\n['O','X','O']\n[' ',' ',' ']",
+      "response": "CHOICE:6",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n['O','X','O']\n['O',' ',' ']",
+      "boardStateAfter": "['X','X',' ']\n['O','X','O']\n['O',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X',' ',' ']\n['O','X','O']\n['O',' ',' ']",
+      "response": "1",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','X',' ']\n['O','X','O']\n['O',' ',' ']",
+      "boardStateAfter": "['X','X',' ']\n['O','X','O']\n['O',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n['X','X',' ']\n['O','X','O']\n['O',' ',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','X',' ']\n['O','X','O']\n['O',' ','O']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','X',' ']\n['O','X','O']\n['O',' ','O']",
+      "response": "2 7  (2,7)×  (1)×  (0)  = 5  (2)×  7  (1)×  0  = 45  (2)×  7  (1)×  0  = 45  (2)×  7  (1)×  0  = 45  (2)×  7  (1)×  0  =",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "9",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:6",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "response": "12345678",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "boardStateAfter": "['O',' ',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "response": "CHOICE:0",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O',' ',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "boardStateAfter": "['O','X',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['O',' ',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "response": "1,2,3,4,5,7,8]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['O','X',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "boardStateAfter": "['O','X',' ']\n[' ',' ',' ']\n['O','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n['O','X',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "response": "CHOICE:7",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O','X',' ']\n[' ',' ',' ']\n['O','O',' ']",
+      "boardStateAfter": "['O','X',' ']\n[' ',' ',' ']\n['O','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n['O','X',' ']\n[' ',' ',' ']\n['O','O',' ']",
+      "response": "1",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['O','X',' ']\n[' ',' ',' ']\n['O','O',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['O','X',' ']\n[' ',' ',' ']\n['O','O',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['X',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "0,1,2,3,4,5,6,7,8] (X)",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['X',' ',' ']\n[' ','O',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:4",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n[' ','O',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['X','X',' ']\n[' ','O',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X',' ',' ']\n[' ','O',' ']\n[' ',' ',' ']",
+      "response": "1,2,3,5,6,7,8]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','X',' ']\n[' ','O',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['X','X','O']\n[' ','O',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','X',' ']\n[' ','O',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:2",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','X','O']\n[' ','O',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['X','X','O']\n[' ','O','X']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','X','O']\n[' ','O',' ']\n[' ',' ',' ']",
+      "response": "5, 2, 0",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','X','O']\n[' ','O','X']\n[' ',' ',' ']",
+      "boardStateAfter": "['X','X','O']\n[' ','O','X']\n[' ','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','X','O']\n[' ','O','X']\n[' ',' ',' ']",
+      "response": "CHOICE:7",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','X','O']\n[' ','O','X']\n[' ','O',' ']",
+      "boardStateAfter": "['X','X','O']\n[' ','O','X']\n[' ','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','X','O']\n[' ','O','X']\n[' ','O',' ']",
+      "response": "4",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','X','O']\n[' ','O','X']\n[' ','O',' ']",
+      "boardStateAfter": "['X','X','O']\n['O','O','X']\n[' ','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','X','O']\n[' ','O','X']\n[' ','O',' ']",
+      "response": "CHOICE:3",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','X','O']\n['O','O','X']\n[' ','O',' ']",
+      "boardStateAfter": "['X','X','O']\n['O','O','X']\n[' ','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','X','O']\n['O','O','X']\n[' ','O',' ']",
+      "response": "[0,2]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','X','O']\n['O','O','X']\n[' ','O',' ']",
+      "boardStateAfter": "['X','X','O']\n['O','O','X']\n[' ','O','O']",
+      "prompt": "You are Player O. This is the board state:\n['X','X','O']\n['O','O','X']\n[' ','O',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','X','O']\n['O','O','X']\n[' ','O','O']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','X','O']\n['O','O','X']\n[' ','O','O']",
+      "response": "6",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ','X']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "5",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ','X']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n['O',' ','X']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ','X']\n[' ',' ',' ']",
+      "response": "CHOICE:3",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n['O',' ','X']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n['O',' ','X']\n['X',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n['O',' ','X']\n[' ',' ',' ']",
+      "response": "6",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n['O',' ','X']\n['X',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n['O',' ','X']\n['X','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n['O',' ','X']\n['X',' ',' ']",
+      "response": "CHOICE:7",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n['O',' ','X']\n['X','O',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n['O',' ','X']\n['X','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n['O',' ','X']\n['X','O',' ']",
+      "response": "24",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n['O',' ','X']\n['X','O',' ']",
+      "boardStateAfter": "['O',' ',' ']\n['O',' ','X']\n['X','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n['O',' ','X']\n['X','O',' ']",
+      "response": "CHOICE:0",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O',' ',' ']\n['O',' ','X']\n['X','O',' ']",
+      "boardStateAfter": "['O','X',' ']\n['O',' ','X']\n['X','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n['O',' ',' ']\n['O',' ','X']\n['X','O',' ']",
+      "response": "1, 2, 4, 8",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['O','X',' ']\n['O',' ','X']\n['X','O',' ']",
+      "boardStateAfter": "['O','X',' ']\n['O','O','X']\n['X','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n['O','X',' ']\n['O',' ','X']\n['X','O',' ']",
+      "response": "CHOICE:4",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O','X',' ']\n['O','O','X']\n['X','O',' ']",
+      "boardStateAfter": "['O','X',' ']\n['O','O','X']\n['X','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n['O','X',' ']\n['O','O','X']\n['X','O',' ']",
+      "response": "4, 2, 8, 2 (two 2, one 2, eight 2));",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['O','X',' ']\n['O','O','X']\n['X','O',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['O','X',' ']\n['O','O','X']\n['X','O',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ','X']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "5, 6, 7, 8]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ','X']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ','O']\n[' ',' ','X']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ','X']\n[' ',' ',' ']",
+      "response": "CHOICE:2",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ','O']\n[' ',' ','X']\n[' ',' ',' ']",
+      "boardStateAfter": "['X',' ','O']\n[' ',' ','X']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ','O']\n[' ',' ','X']\n[' ',' ',' ']",
+      "response": "0,5,2,2",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X',' ','O']\n[' ',' ','X']\n[' ',' ',' ']",
+      "boardStateAfter": "['X','O','O']\n[' ',' ','X']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X',' ','O']\n[' ',' ','X']\n[' ',' ',' ']",
+      "response": "CHOICE:1",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','O','O']\n[' ',' ','X']\n[' ',' ',' ']",
+      "boardStateAfter": "['X','O','O']\n['X',' ','X']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','O','O']\n[' ',' ','X']\n[' ',' ',' ']",
+      "response": "3, 12, 6, 4, 6, 8,\n  5, 4, 6, 7, 0, 3,\n 2, 4, 8, 6, 7, 0, 3,\n 2, 4, 8, 6, 7, 0, 3,\n 3)",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','O','O']\n['X',' ','X']\n[' ',' ',' ']",
+      "boardStateAfter": "['X','O','O']\n['X','O','X']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','O','O']\n['X',' ','X']\n[' ',' ',' ']",
+      "response": "CHOICE:4",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','O','O']\n['X','O','X']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','O','O']\n['X','O','X']\n[' ',' ',' ']",
+      "response": "6,7,8:",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:5",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ','X']\n[' ',' ','O']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ','O']\n[' ',' ',' ']",
+      "response": "2",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ','X']\n[' ',' ','O']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ','X']\n[' ',' ','O']\n[' ',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ','X']\n[' ',' ','O']\n[' ',' ',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ','X']\n[' ',' ','O']\n[' ',' ','O']",
+      "boardStateAfter": "[' ',' ','X']\n[' ',' ','O']\n[' ',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ','X']\n[' ',' ','O']\n[' ',' ','O']",
+      "response": "2",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ','X']\n[' ',' ','O']\n[' ',' ','O']",
+      "boardStateAfter": "[' ',' ','X']\n['O',' ','O']\n[' ',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ','X']\n[' ',' ','O']\n[' ',' ','O']",
+      "response": "CHOICE:3",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ','X']\n['O',' ','O']\n[' ',' ','O']",
+      "boardStateAfter": "[' ',' ','X']\n['O',' ','O']\n[' ',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ','X']\n['O',' ','O']\n[' ',' ','O']",
+      "response": "360; 960",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ','X']\n['O',' ','O']\n[' ',' ','O']",
+      "boardStateAfter": "['O',' ','X']\n['O',' ','O']\n[' ',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ','X']\n['O',' ','O']\n[' ',' ','O']",
+      "response": "CHOICE:0",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O',' ','X']\n['O',' ','O']\n[' ',' ','O']",
+      "boardStateAfter": "['O',' ','X']\n['O',' ','O']\n[' ',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n['O',' ','X']\n['O',' ','O']\n[' ',' ','O']",
+      "response": "[0,0,0,2], [0,0,0,3], [0,0,0,4],\n[3, -5, 0], [8, 9, 10], [-1, -2, -3]\n(List of available moves: [-1, 7], [-1, 6])\n[1, 5, -2], [-1, 6], [-2, 4], [-2, 0]]\n[1, 0, 4], [-5, 0, -10], [3, 4, 5], [-1, 6], [-2, 0]\n(List of available moves: [-1, 7], [-1, 6])\n[0, 5, 4], [-7, 0, -10], [-3, 4, 5], [-1, 6], [-2, 0]]\n(List of available moves: [-1, 7], [-1, 6)])\n[0, 5, 4], [-7, 0, -10], [-3, 4, 5], [-1, 6], [-2, 0]]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['O',' ','X']\n['O',' ','O']\n[' ',' ','O']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['O',' ','X']\n['O',' ','O']\n[' ',' ','O']",
+      "response": "CHOICE:4",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n['X',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "6",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n['X',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n['X','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n['X',' ',' ']",
+      "response": "CHOICE:7",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n['X','O',' ']",
+      "boardStateAfter": "['X',' ',' ']\n[' ',' ',' ']\n['X','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n['X','O',' ']",
+      "response": "0-7",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n[' ',' ',' ']\n['X','O',' ']",
+      "boardStateAfter": "['X',' ',' ']\n['O',' ',' ']\n['X','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X',' ',' ']\n[' ',' ',' ']\n['X','O',' ']",
+      "response": "CHOICE:3",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n['O',' ',' ']\n['X','O',' ']",
+      "boardStateAfter": "['X','X',' ']\n['O',' ',' ']\n['X','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X',' ',' ']\n['O',' ',' ']\n['X','O',' ']",
+      "response": "1, 2, 4, 5, 8)",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','X',' ']\n['O',' ',' ']\n['X','O',' ']",
+      "boardStateAfter": "['X','X',' ']\n['O',' ','O']\n['X','O',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','X',' ']\n['O',' ',' ']\n['X','O',' ']",
+      "response": "CHOICE:5",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','X',' ']\n['O',' ','O']\n['X','O',' ']",
+      "boardStateAfter": "['X','X',' ']\n['O',' ','O']\n['X','O',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','X',' ']\n['O',' ','O']\n['X','O',' ']",
+      "response": "0",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','X',' ']\n['O',' ','O']\n['X','O',' ']",
+      "boardStateAfter": "['X','X',' ']\n['O',' ','O']\n['X','O','O']",
+      "prompt": "You are Player O. This is the board state:\n['X','X',' ']\n['O',' ','O']\n['X','O',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','X',' ']\n['O',' ','O']\n['X','O','O']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['X','X',' ']\n['O',' ','O']\n['X','O','O']",
+      "response": "2",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ','X',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "4",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ','X',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['O',' ',' ']\n[' ','X',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ','X',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:0",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O',' ',' ']\n[' ','X',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['O','X',' ']\n[' ','X',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n['O',' ',' ']\n[' ','X',' ']\n[' ',' ',' ']",
+      "response": "1, 2, 3, 5, 6, 7, 8]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['O','X',' ']\n[' ','X',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "['O','X',' ']\n[' ','X',' ']\n[' ',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n['O','X',' ']\n[' ','X',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O','X',' ']\n[' ','X',' ']\n[' ',' ','O']",
+      "boardStateAfter": "['O','X',' ']\n[' ','X',' ']\n[' ',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n['O','X',' ']\n[' ','X',' ']\n[' ',' ','O']",
+      "response": "[0], [1, 2], [3], [4], [5], [6],\n[7, 8, 9]].",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['O','X',' ']\n[' ','X',' ']\n[' ',' ','O']",
+      "boardStateAfter": "['O','X',' ']\n[' ','X','O']\n[' ',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n['O','X',' ']\n[' ','X',' ']\n[' ',' ','O']",
+      "response": "CHOICE:5",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O','X',' ']\n[' ','X','O']\n[' ',' ','O']",
+      "boardStateAfter": "['O','X','X']\n[' ','X','O']\n[' ',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n['O','X',' ']\n[' ','X','O']\n[' ',' ','O']",
+      "response": "2",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['O','X','X']\n[' ','X','O']\n[' ',' ','O']",
+      "boardStateAfter": "['O','X','X']\n[' ','X','O']\n['O',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n['O','X','X']\n[' ','X','O']\n[' ',' ','O']",
+      "response": "CHOICE:6",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['O','X','X']\n[' ','X','O']\n['O',' ','O']",
+      "boardStateAfter": "['O','X','X']\n['X','X','O']\n['O',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n['O','X','X']\n[' ','X','O']\n['O',' ','O']",
+      "response": "3,7 => [0,2] ]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['O','X','X']\n['X','X','O']\n['O',' ','O']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['O','X','X']\n['X','X','O']\n['O',' ','O']",
+      "response": "CHOICE:7",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:6",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n['O',' ','X']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n['O',' ',' ']",
+      "response": "8",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n['O',' ','X']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ','O',' ']\n['O',' ','X']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n['O',' ','X']",
+      "response": "CHOICE:4",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ','O',' ']\n['O',' ','X']",
+      "boardStateAfter": "['X',' ',' ']\n[' ','O',' ']\n['O',' ','X']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ','O',' ']\n['O',' ','X']",
+      "response": "0",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X',' ',' ']\n[' ','O',' ']\n['O',' ','X']",
+      "boardStateAfter": "['X','O',' ']\n[' ','O',' ']\n['O',' ','X']",
+      "prompt": "You are Player O. This is the board state:\n['X',' ',' ']\n[' ','O',' ']\n['O',' ','X']",
+      "response": "CHOICE:1",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','O',' ']\n[' ','O',' ']\n['O',' ','X']",
+      "boardStateAfter": "['X','O',' ']\n[' ','O',' ']\n['O',' ','X']",
+      "prompt": "You are Player X. This is the board state:\n['X','O',' ']\n[' ','O',' ']\n['O',' ','X']",
+      "response": "6",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','O',' ']\n[' ','O',' ']\n['O',' ','X']",
+      "boardStateAfter": "['X','O',' ']\n['O','O',' ']\n['O',' ','X']",
+      "prompt": "You are Player O. This is the board state:\n['X','O',' ']\n[' ','O',' ']\n['O',' ','X']",
+      "response": "CHOICE:3",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "['X','O',' ']\n['O','O',' ']\n['O',' ','X']",
+      "boardStateAfter": "['X','O','X']\n['O','O',' ']\n['O',' ','X']",
+      "prompt": "You are Player X. This is the board state:\n['X','O',' ']\n['O','O',' ']\n['O',' ','X']",
+      "response": "2,5,7 [2,5,7] will move to the bottom row. So it will start in blue and end up on top of red.\n5,7 [5,7] will move to the middle row. So it will start in green and end up on top of yellow.",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "['X','O','X']\n['O','O',' ']\n['O',' ','X']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n['X','O','X']\n['O','O',' ']\n['O',' ','X']",
+      "response": "CHOICE:5",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "9",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ','O',' ']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ',' ',' ']\n[' ',' ',' ']",
+      "response": "CHOICE:4",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ','O',' ']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ',' ',' ']\n[' ','O','X']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ',' ',' ']\n[' ','O',' ']\n[' ',' ',' ']",
+      "response": "48 5 9 7 2 1 0 0",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ',' ',' ']\n[' ','O','X']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ','O',' ']\n[' ','O','X']\n[' ',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ',' ',' ']\n[' ','O','X']\n[' ',' ',' ']",
+      "response": "CHOICE:1",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ','O',' ']\n[' ','O','X']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ','O','X']\n[' ','O','X']\n[' ',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ','O',' ']\n[' ','O','X']\n[' ',' ',' ']",
+      "response": "2, 4, 6, 8, 10.",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ','O','X']\n[' ','O','X']\n[' ',' ',' ']",
+      "boardStateAfter": "[' ','O','X']\n[' ','O','X']\n['O',' ',' ']",
+      "prompt": "You are Player O. This is the board state:\n[' ','O','X']\n[' ','O','X']\n[' ',' ',' ']",
+      "response": "CHOICE:6",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ','O','X']\n[' ','O','X']\n['O',' ',' ']",
+      "boardStateAfter": "[' ','O','X']\n[' ','O','X']\n['O',' ',' ']",
+      "prompt": "You are Player X. This is the board state:\n[' ','O','X']\n[' ','O','X']\n['O',' ',' ']",
+      "response": "1,3,7,8]",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    },
+    {
+      "boardStateBefore": "[' ','O','X']\n[' ','O','X']\n['O',' ',' ']",
+      "boardStateAfter": "[' ','O','X']\n[' ','O','X']\n['O',' ','O']",
+      "prompt": "You are Player O. This is the board state:\n[' ','O','X']\n[' ','O','X']\n['O',' ',' ']",
+      "response": "CHOICE:8",
+      "isXTurn": false,
+      "modelname": "Random"
+    },
+    {
+      "boardStateBefore": "[' ','O','X']\n[' ','O','X']\n['O',' ','O']",
+      "boardStateAfter": "[' ','O','X']\n[' ','O','X']\n['O',' ','O']",
+      "prompt": "You are Player X. This is the board state:\n[' ','O','X']\n[' ','O','X']\n['O',' ','O']",
+      "response": "4\n  * X o  o x o \n    * O x o X o o \n    * X o o  o o x\n  * O o o X o o o \n  * X o o o X o o o\n  * X o o  o o x\n  * X o o o X o o",
+      "isXTurn": true,
+      "modelname": "qwen-0.5b"
+    }
+  ]
+}

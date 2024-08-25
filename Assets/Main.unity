@@ -967,8 +967,8 @@ MonoBehaviour:
   sendAvailableMoves: 1
   timeBetweenRounds: 1
   illegalOrInvalidMovesCountAsMoves: 1
-  languageModelX: {fileID: 11400000, guid: 68a1851163d8d435fa04d61a0d8879a6, type: 2}
-  languageModelO: {fileID: 11400000, guid: 03290971315104e24afc34788f3aae14, type: 2}
+  languageModelX: {fileID: 11400000, guid: 8fca45c340ec14f57861459a213c4c1e, type: 2}
+  languageModelO: {fileID: 11400000, guid: 799e80ceb9faf4fa5a23f03d05bca977, type: 2}
   boardStateText: {fileID: 692023558}
   loggerPlayerX: {fileID: 1574612973}
   loggerPlayerO: {fileID: 1610201703}

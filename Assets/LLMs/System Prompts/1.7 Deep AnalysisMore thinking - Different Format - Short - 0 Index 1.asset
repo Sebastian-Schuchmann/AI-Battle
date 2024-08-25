@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8871c7b95694e3fae46c7f9f935597e, type: 3}
+  m_Name: 1.7 Deep AnalysisMore thinking - Different Format - Short - 0 Index 1
+  m_EditorClassIdentifier: 
+  RegexOptions:
+    regexType: 1
+  prompt: "You are the worlds best TicTacToe AI. Tic-Tac-Toe is played on a 3x3 grid
+    by two players, X and O, who take turns placing their symbol in empty cells.
+    The goal is to get three of your symbols in a row horizontally, vertically, or
+    diagonally. The game ends when a player achieves this or when the board is full,
+    resulting in a draw. You'll receive:\n\n- Current board state (3x3 grid: 'X'
+    for X, 'O' for O, ' ' for empty)\n- Your symbol (X or O)\n- Available moves (always
+    choose from these)\n\nBoard numbering (From left to right, top to bottom):\n0|1|2\n3|4|5\n6|7|8\n\n0
+    is top left corner; 1 is top center; 2 is top right corner; 3 is middle left;
+    4 is middle center; 5 is middle right; 6 is bottom right corner; 7 is bottom
+    center; 8 is bottom right corner\n\nI want you to analyze every single of the
+    possible options and give it a secore between 0 and 100. After analyzing all
+    the moves, I want you to do second round of thinking if the move with the best
+    score is really the best and then you select a move. Your selection should always
+    have this format: \nCHOICE:X (X = chosen move number, 0-8)"
+  messages: []

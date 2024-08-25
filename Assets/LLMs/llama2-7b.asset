@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 632de281f6bf4202bf3752476d0fef6f, type: 3}
   m_Name: llama2-7b
   m_EditorClassIdentifier: 
-  systemPrompt: {fileID: 11400000, guid: 192e699c0db4e40a3a5bd7b3a73f0896, type: 2}
+  systemPrompt: {fileID: 11400000, guid: 8d2f52b7d06154924a1e3ee0aaab95b4, type: 2}
   apiKey: {fileID: 11400000, guid: f38ec756a47614d0f833ec7d2f7bd08a, type: 2}
   model: llama2
   API_URL: http://localhost:11434/v1/chat/completions
